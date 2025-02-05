@@ -45,30 +45,30 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix ies: <http://ies.data.gov.uk/ontology/ies4#> .
 
-@prefix ies:        <http://informationexchangestandard.or/ontology/ies#> .
-@prefix iesnsd:     <http://informationexchangestandard.or/ontology/ies/nsd#> .
-@prefix iesbuild:   <http://informationexchangestandard.or/ontology/ies/building#> .
-@prefix iesinfra:   <http://informationexchangestandard.or/ontology/ies/infrastructure#> .
-@prefix iesppl:     <http://informationexchangestandard.or/ontology/ies/people#> .
-@prefix iessystems: <http://informationexchangestandard.or/ontology/ies/systemsintegrity#> .
+@prefix ies:        <http://informationexchangestandard.org/ontology/ies#> .
+@prefix iesnsd:     <http://informationexchangestandard.org/ontology/ies/nsd#> .
+@prefix iesbuild:   <http://informationexchangestandard.org/ontology/ies/building#> .
+@prefix iesinfra:   <http://informationexchangestandard.org/ontology/ies/infrastructure#> .
+@prefix iesppl:     <http://informationexchangestandard.org/ontology/ies/people#> .
+@prefix iessystems: <http://informationexchangestandard.org/ontology/ies/systemsintegrity#> .
 
 # Ontology Definition & Metadata
 ies: a owl:Ontology ;
-   dcterms:title "IES Infrastructure Domain Ontology"@en-GB ;
-   dcterms:description "An IES domain ontology for describing built infrastructure and associated technology"@en-GB ;
+   dcterms:title "IES Common Ontology"@en-GB ;
+   dcterms:description "The IES Common ontology defines the upper ontology classes, properties, and attributes used by all other IES ontology extensions."@en-GB ;
    dcterms:audience "Domain experts and data modelers"@en-GB ;
-   dcterms:coverage "Classes, properties, and annotations for describing infrastructure concepts"@en-GB ;
-   dcterms:type "IES Domain Ontology"@en-GB ;
-   dcterms:created "2025"^^xsd:gYear ;
-   dcterms:modified "2025-01-23"^^xsd:date ;
+   dcterms:coverage "Classes, properties, and annotations for describing common concepts"@en-GB ;
+   dcterms:type "IES Common Ontology"@en-GB ;
+   dcterms:created "2020"^^xsd:gYear ;
+   dcterms:modified "2024-12-16"^^xsd:date ;
    dcterms:publisher "UK Department for Business and Trade"@en-GB ;
    dcterms:language "en-GB" ;
    dcterms:license <https://spdx.org/licenses/MIT.html> ;
-   dcterms:rights "Crown Copyright 2025"@en-GB ;
-   dcterms:dateCopyrighted "2025"^^xsd:gYear ;
-   vann:preferredNamespacePrefix "iesinfra" ;
-   vann:preferredNamespaceUri "http://ies.data.gov.uk/ontology/ies/infrastructure#" ;
-   owl:versionInfo "0.1.0" .
+   dcterms:rights "Crown Copyright 2020-2025"@en-GB ;
+   dcterms:dateCopyrighted "2020"^^xsd:gYear ;
+   vann:preferredNamespacePrefix "ies" ;
+   vann:preferredNamespaceUri "http://informationexchangestandard.org/ontology/ies#" ;
+   owl:versionInfo "4.3.0" .
 
 #########################
 # Class definitions.    #

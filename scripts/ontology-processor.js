@@ -16,7 +16,6 @@ class OntologyProcessor {
         try {
             console.log('Starting to parse Turtle content...');
 
-            // Parse the turtle content
             const quads = await new Promise((resolve, reject) => {
                 let results = [];
                 this.parser.parse(turtleContent, (error, quad, prefixes) => {
@@ -34,23 +33,45 @@ class OntologyProcessor {
             });
 
             console.log(`Parsed ${quads.length} quads`);
-
             this.store.addQuads(quads);
-
-            // Extract ontology metadata
             this.extractMetadata();
-
-            // Process classes
             this.extractClasses();
-
-            // Process properties
             this.extractProperties();
-
             return this.generateHTML();
         } catch (error) {
             console.error('Error in processFile:', error);
             throw error;
         }
+    }
+
+    createLink(uri) {
+        // Check if it's a class or property we know about
+        const isClass = this.classes.has(uri);
+        const isProperty = this.properties.has(uri);
+
+        if (!isClass && !isProperty) {
+            return this.formatURI(uri);
+        }
+
+        // Get the label if available
+        let label = uri;
+        if (isClass) {
+            label = this.classes.get(uri).label || this.formatURI(uri);
+        } else if (isProperty) {
+            label = this.properties.get(uri).label || this.formatURI(uri);
+        }
+
+        return `<a href="#${encodeURIComponent(uri)}">${label}</a>`;
+    }
+
+    formatURI(uri) {
+        // Try to use prefix if available
+        for (const [prefix, namespace] of Object.entries(this.prefixes)) {
+            if (uri.startsWith(namespace)) {
+                return `${prefix}:${uri.slice(namespace.length)}`;
+            }
+        }
+        return uri;
     }
 
     extractMetadata() {
@@ -60,9 +81,7 @@ class OntologyProcessor {
 
         if (ontologyQuads.length > 0) {
             const ontologyNode = ontologyQuads[0].subject;
-
-            // Get basic metadata
-            const metadata = {
+            this.metadata = {
                 title: this.getValue(ontologyNode, 'http://purl.org/dc/terms/title'),
                 description: this.getValue(ontologyNode, 'http://purl.org/dc/terms/description'),
                 version: this.getValue(ontologyNode, 'http://www.w3.org/2002/07/owl#versionInfo'),
@@ -70,9 +89,7 @@ class OntologyProcessor {
                 modified: this.getValue(ontologyNode, 'http://purl.org/dc/terms/modified'),
                 publisher: this.getValue(ontologyNode, 'http://purl.org/dc/terms/publisher')
             };
-
-            this.metadata = metadata;
-            console.log('Metadata extracted:', metadata);
+            console.log('Metadata extracted:', this.metadata);
         }
     }
 
@@ -166,12 +183,13 @@ class OntologyProcessor {
 
         <section id="classes" class="section">
             <h2>Classes</h2>
-            ${Array.from(this.classes.values()).map(cls => `
+            ${Array.from(this.classes.values()).sort((a, b) => a.label.localeCompare(b.label)).map(cls => `
                 <div class="class-item">
-                    <h3 id="${cls.uri}">${cls.label}</h3>
+                    <h3 id="${encodeURIComponent(cls.uri)}">${cls.label}</h3>
+                    <p class="uri">${this.formatURI(cls.uri)}</p>
                     <p>${cls.comment}</p>
                     ${cls.subClassOf.length ? `
-                        <p><strong>Subclass of:</strong> ${cls.subClassOf.join(', ')}</p>
+                        <p><strong>Subclass of:</strong> ${cls.subClassOf.map(uri => this.createLink(uri)).join(', ')}</p>
                     ` : ''}
                 </div>
             `).join('')}
@@ -179,16 +197,37 @@ class OntologyProcessor {
 
         <section id="properties" class="section">
             <h2>Properties</h2>
-            ${Array.from(this.properties.values()).map(prop => `
+            ${Array.from(this.properties.values()).sort((a, b) => a.label.localeCompare(b.label)).map(prop => `
                 <div class="property-item">
-                    <h3 id="${prop.uri}">${prop.label}</h3>
+                    <h3 id="${encodeURIComponent(prop.uri)}">${prop.label}</h3>
+                    <p class="uri">${this.formatURI(prop.uri)}</p>
                     <p>${prop.comment}</p>
-                    <p><strong>Domain:</strong> ${prop.domain}</p>
-                    <p><strong>Range:</strong> ${prop.range}</p>
+                    ${prop.domain ? `<p><strong>Domain:</strong> ${this.createLink(prop.domain)}</p>` : ''}
+                    ${prop.range ? `<p><strong>Range:</strong> ${this.createLink(prop.range)}</p>` : ''}
                 </div>
             `).join('')}
         </section>
     </main>
+
+    <script>
+        // Highlight the current entity when navigating via hash
+        function highlightCurrent() {
+            // Remove any existing highlights
+            document.querySelectorAll('.highlighted').forEach(el => el.classList.remove('highlighted'));
+            
+            // Add highlight to current target
+            if (location.hash) {
+                const target = document.querySelector(location.hash);
+                if (target) {
+                    target.closest('.class-item, .property-item').classList.add('highlighted');
+                    target.scrollIntoView();
+                }
+            }
+        }
+
+        window.addEventListener('hashchange', highlightCurrent);
+        window.addEventListener('load', highlightCurrent);
+    </script>
 </body>
 </html>`;
     }

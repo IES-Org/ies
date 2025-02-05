@@ -5,6 +5,12 @@
     background: var(--light-bg);
     border-radius: 4px;
     border-left: 4px solid var(--accent-color);
+    transition: background-color 0.3s ease;
+}
+
+.class-item.highlighted, .property-item.highlighted {
+    background-color: #e3f2fd;
+    border-left-color: #1e88e5;
 }
 
 .class-item h3, .property-item h3 {
@@ -39,6 +45,20 @@ dd {
     padding: 0.2rem 0.4rem;
     border-radius: 3px;
     font-size: 0.9em;
+    color: #666;
+    margin: 0.5rem 0;
+}
+
+/* Links */
+.class-item a, .property-item a {
+    color: var(--accent-color);
+    text-decoration: none;
+    border-bottom: 1px dashed var(--accent-color);
+}
+
+.class-item a:hover, .property-item a:hover {
+    color: var(--primary-color);
+    border-bottom-style: solid;
 }
 
 /* Navigation enhancements */
@@ -47,4 +67,10 @@ dd {
     top: 0;
     background: var(--secondary-color);
     z-index: 100;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem; /* Accounts for sticky nav */
 }
