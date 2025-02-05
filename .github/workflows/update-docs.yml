@@ -52,3 +52,19 @@ jobs:
             git commit -m "Update docs from ${{ github.event.client_payload.repo }}@${{ github.event.client_payload.ref }}"
             git push
           fi
+
+      - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                node-version: '18'
+
+            - name: Install dependencies
+              run: npm install
+
+            - name: Build ontology documentation
+              run: node build-docs.js
+
+            - name: Copy documentation
+              run: |
+                # Get the repository name without 'ies-' prefix if it exists
+                DEST_DIR=$(echo "${{ steps.repo-name.outputs.repo_name }}" | sed 's/^ies-//')
