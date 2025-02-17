@@ -6500,6 +6500,9 @@ Note: more often than not, this will be a statement of regular/occasional worshi
         </section>
     </main>
 
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+
     <script>
         // Highlight the current entity when navigating via hash
         function highlightCurrent() {
@@ -6515,6 +6518,33 @@ Note: more often than not, this will be a statement of regular/occasional worshi
                 }
             }
         }
+
+        // Back to top functionality
+        const backToTop = document.getElementById('back-to-top');
+        
+        // Show button when scrolling down
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        // Smooth scroll to top
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Check if we're deep into the page on load
+        window.addEventListener('load', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('show');
+            }
+        });
 
         window.addEventListener('hashchange', highlightCurrent);
         window.addEventListener('load', highlightCurrent);
