@@ -1,76 +1,121 @@
 /* Ontology-specific styles */
 .class-item, .property-item {
-    margin: 2rem 0;
+    margin: 1.5rem 0;
     padding: 1.5rem;
-    background: var(--light-bg);
-    border-radius: 4px;
+    background: white;
+    border-radius: 0.5rem;
     border-left: 4px solid var(--accent-color);
-    transition: background-color 0.3s ease;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.class-item:hover, .property-item:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
 }
 
 .class-item.highlighted, .property-item.highlighted {
-    background-color: #e3f2fd;
-    border-left-color: #1e88e5;
+    background-color: #f0f9ff;
+    border-left-color: var(--primary-color);
+    box-shadow: var(--shadow-md);
 }
 
 .class-item h3, .property-item h3 {
-    color: var(--primary-color);
-    margin-top: 0;
+    color: var(--secondary-color);
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: -0.025em;
 }
 
+/* Metadata display */
 dl {
     display: grid;
     grid-template-columns: auto 1fr;
-    gap: 1rem;
-    margin: 1rem 0;
+    gap: 1.25rem 2rem;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background: var(--light-bg);
+    border-radius: 0.5rem;
 }
 
 dt {
-    font-weight: bold;
-    color: var(--primary-color);
+    font-weight: 600;
+    color: var(--secondary-color);
 }
 
 dd {
     margin: 0;
 }
 
-.property-item strong {
-    color: var(--secondary-color);
-}
-
 /* URI display */
 .uri {
-    font-family: monospace;
-    background: #f5f5f5;
-    padding: 0.2rem 0.4rem;
-    border-radius: 3px;
-    font-size: 0.9em;
-    color: #666;
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--light-bg);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    color: var(--primary-dark);
     margin: 0.5rem 0;
+    display: inline-block;
+}
+
+/* Property details */
+.property-item strong {
+    color: var(--secondary-color);
+    font-weight: 600;
 }
 
 /* Links */
 .class-item a, .property-item a {
-    color: var(--accent-color);
+    color: var(--primary-color);
     text-decoration: none;
-    border-bottom: 1px dashed var(--accent-color);
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-bottom: 1px solid transparent;
 }
 
 .class-item a:hover, .property-item a:hover {
-    color: var(--primary-color);
-    border-bottom-style: solid;
+    color: var(--primary-dark);
+    border-bottom-color: var(--primary-dark);
 }
 
-/* Navigation enhancements */
-.nav-list {
-    position: sticky;
-    top: 0;
-    background: var(--secondary-color);
-    z-index: 100;
+/* Property and class content */
+.class-item p, .property-item p {
+    margin: 0.75rem 0;
+    line-height: 1.6;
+}
+
+/* Badge-style tags */
+.tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: var(--light-bg);
+    color: var(--secondary-color);
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-right: 0.5rem;
 }
 
 /* Smooth scrolling */
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 4rem; /* Accounts for sticky nav */
+    scroll-padding-top: 5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .class-item, .property-item {
+        padding: 1rem;
+    }
+    
+    dl {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .uri {
+        font-size: 0.75rem;
+    }
 }
