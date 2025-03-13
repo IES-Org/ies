@@ -15,6 +15,9 @@ The IES is composed of several interconnected ontologies:
 
 Each ontology maintains versioned documentation under `v1.0`, `v1rc`, etc.
 
+## Updating and Publishing
+
+For details on updating and publishing the IES ontologies, see [scripts/README.md](scripts/README.md).
 ## Documentation Access
 
 The ontology documentation is hosted using GitHub Pages. Each ontology section includes:
