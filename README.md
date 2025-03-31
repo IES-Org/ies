@@ -1,42 +1,34 @@
-# Information Exchange Standard (IES) Ontologies
+![IES Logo](./assets/img/IES-logo-dark.png)
 
-This repository hosts the documentation and specifications for the Information Exchange Standard (IES) ontologies. These RDF ontologies provide standardized vocabularies and semantics for information exchange. The documentation is served via GitHub Pages at [add-your-github-pages-url-here].
+# The IES Ontology
 
-## Ontology Structure
+IES was developed by the UK Government with contributions from Dstl, Ministry of Defence, Metropolitan Police Service, Foreign & Commonwealth Office, Home Office, Department for Business and Trade (was BEIS), and HMRC, with technical support from Aurora Consulting (to Home Office) and Telicent (to Dstl).
 
-The IES is composed of several interconnected ontologies:
+This repo provides public access to the IES for collaboration purposes including the specification itself, sample data/code and supporting documentation. There is also a private repo used for the management of the IES; please get in touch if you require access, for example to submit formal Change Requests.
 
-- `/iescommon` - Core concepts and shared vocabulary
-- `/iesbuild` - Concepts and relations about the built environment
-- `/iesinfra` - Infrastructure in the built environment
-- `/iesnsd` - security and defense concepts
-- `/iespeople` - People, organizations, and roles
-- `/iessystems` - Systems and components descriptions
+© Crown copyright (2020-2025). This information is licensed under the terms of the [MIT License][mit-license] except where otherwise stated.
 
-Each ontology maintains versioned documentation under `v1.0`, `v1rc`, etc.
+## Introduction to IES
 
-## Updating and Publishing
+If you are new to IES, see the [Introduction to IES][intro] document.
 
-For details on updating and publishing the IES ontologies, see [scripts/README.md](scripts/README.md).
-## Documentation Access
+[mit-license]: https://opensource.org/licenses/MIT
 
-The ontology documentation is hosted using GitHub Pages. Each ontology section includes:
+## Introduction to 4D Ontologies
 
-- Concept definitions
-- Property descriptions
-- Usage examples
-- Version history
+For an introduction to 4D Ontologies, see the [Introduction to 4D Ontology][4d-ontology-intro] document.
 
-## Versioning
+## Documentation
 
-Each ontology follows semantic versioning:
-- `v1.0.0`, `v2.0.0`, etc. - Stable releases
-- `v1.0.0rc`, `v2.0.0rc`, etc. - Release candidates
+The complete reference for IES Common is available [here][ies.md].
+
+Further supporting documentation is available in [Supporting Documentation][supporting-docs].
+
+[4d-ontology-intro]: ./v4.3/docs/4dOntologyIntro.md
+[ies.md]: ./v4.3/docs/ies.md
+[intro]: ./v4.3/docs/introduction.md
+[supporting-docs]: ./v4.3/Supporting-Documents
 
 ## License
 
 This project is licensed under the terms specified in the [LICENSE](LICENSE) file.
-
----
-
-**Note**: This README will be expanded with detailed information about each ontology, their relationships, usage guidelines, and best practices for implementation.
