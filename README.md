@@ -47,8 +47,6 @@ For more information, including contact details, please go to https://www.inform
 
 If you are new to IES, see the [Introduction to IES][intro] document.
 
-[mit-license]: https://opensource.org/licenses/MIT
-
 ## Introduction to 4D Ontologies
 
 For an introduction to 4D Ontologies, see the [Introduction to 4D Ontology][4d-ontology-intro] document.
@@ -72,6 +70,7 @@ The Information Exchange Standard (IES 4) is licensed under the terms of the [MI
 [4d-ontology-intro]: ./v4.3/docs/4dOntologyIntro.md
 [ies.md]: ./v4.3/docs/ies.md
 [intro]: ./v4.3/docs/introduction.md
+[mit-license]: ./LICENSE.md
 [sample-data]: ./v4.3/Sample-Data
 [specification]: ./v4.3/Specification
 [supporting-docs]: ./v4.3/Supporting-Documents
