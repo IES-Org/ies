@@ -41,7 +41,7 @@ IES is an evolving and collaborative initiative, welcoming contributions from pr
 3. Collaborate with organisations to drive adoption and integration across sectors
 4. Contribute to the model by proposing improvements, extensions, and refinements
 
-For more information, including contact details, please go to https://www.informationexchangestandrard.org
+For more information, including contact details, please go to https://www.informationexchangestandard.org
 
 # IES 4.3
 
