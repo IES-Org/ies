@@ -41,17 +41,19 @@ IES is an evolving and collaborative initiative, welcoming contributions from pr
 3. Collaborate with organisations to drive adoption and integration across sectors
 4. Contribute to the model by proposing improvements, extensions, and refinements
 
-# Introduction to IES
+For more information, including contact details, please go to https://informationexchangestandrard.org
+
+# IES 4.3
 
 If you are new to IES, see the [Introduction to IES][intro] document.
 
 [mit-license]: https://opensource.org/licenses/MIT
 
-# Introduction to 4D Ontologies
+## Introduction to 4D Ontologies
 
 For an introduction to 4D Ontologies, see the [Introduction to 4D Ontology][4d-ontology-intro] document.
 
-# Documentation
+## IES 4.3 Specification and Documentation
 
 The complete reference for IES 4.3 is available [here][ies.md].
 
@@ -59,7 +61,13 @@ The IES 4.3 technical specification is available in the IES [Specification][spec
 
 Further supporting documentation is available in [Supporting-Documents][supporting-docs].
 
-Sample data are avaialble in the [Sample-Data][sample-data] directory.
+Sample data are available in the [Sample-Data][sample-data] directory.
+
+# License
+
+© Crown copyright (2020-2025)
+
+The Information Exchange Standard (IES 4) is licensed under the terms of the [MIT License][mit-license]. Code and data samples are provided under [Open Government Licence](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) except where otherwise stated.
 
 [4d-ontology-intro]: ./v4.3/docs/4dOntologyIntro.md
 [ies.md]: ./v4.3/docs/ies.md
@@ -68,8 +76,3 @@ Sample data are avaialble in the [Sample-Data][sample-data] directory.
 [specification]: ./v4.3/Specification
 [supporting-docs]: ./v4.3/Supporting-Documents
 
-# License
-
-© Crown copyright (2020-2025)
-
-The Information Exchange Standard (IES 4) is licensed under the terms of the [MIT License][mit-license]. Code and data samples are provided under [Open Government Licence](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) except where otherwise stated.
