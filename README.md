@@ -65,7 +65,14 @@ Sample data are available in the [Sample-Data][sample-data] directory.
 
 © Crown copyright (2020-2025)
 
-The Information Exchange Standard (IES 4) is licensed under the terms of the [MIT License][mit-license]. Code and data samples are provided under [Open Government Licence](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) except where otherwise stated.
+The Information Exchange Standard (IES 4) is licensed under the terms of the [MIT License][mit-license].
+
+This repository contains **both source code and documentation**, each covered by different licenses:
+
+- **Code** is licensed under the [Apache License 2.0](LICENSE.md).
+- **Documentation** is licensed under the [Open Government Licence (OGL) v3.0](OGL_LICENSE.md).
+
+By contributing to this repository, you agree that your contributions will be licensed under these terms.
 
 [4d-ontology-intro]: ./v4.3/docs/4dOntologyIntro.md
 [ies.md]: ./v4.3/docs/ies.md
