@@ -1,7 +1,7 @@
 # License
 Copyright © 2025 Crown Copyright.
 
-Unless stated otherwise, the codebase is released under the [MIT License, Version 2.0](https://opensource.org/license/mit). This covers both the codebase and any sample code in the documentation.
+Unless stated otherwise, the IES specification is released under the [MIT License, Version 2.0](https://opensource.org/license/mit). This covers both the IES specification and any data samples.
 
 The documentation is © [Crown copyright](https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/) and available under the terms of the [Open Government Licence](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/)
 
