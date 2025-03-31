@@ -1,40 +1,75 @@
 ![IES Logo](./assets/img/IES-logo-dark.png)
 
-© Crown copyright (2020-2025).
+© Crown copyright (2020-2025)
 
-# The IES Ontology
+# What is IES?
 
-IES was developed by the UK Government with contributions from Dstl, Ministry of Defence, Metropolitan Police Service, Foreign & Commonwealth Office, Home Office, Department for Business and Trade (was BEIS), and HMRC, with technical support from Aurora Consulting (to Home Office) and Telicent (to Dstl).
+**A unified approach for seamless data exchange**
 
-This repo provides public access to the IES for collaboration purposes including the specification itself, sample data/code and supporting documentation. There is also a private repo used for the management of the IES; please get in touch if you require access, for example to submit formal Change Requests.
+The Information Exchange Standard (IES) is an open, structured framework designed to enable consistent and interoperable data exchange across multiple sectors, including buildings, infrastructure (currently encompassing aspects of transport water and energy), defence and national security.
 
-## Introduction to IES
+IES provides a common ontology for describing entities, events, relationships, and metadata in a standardised and structured manner. By leveraging semantic web principles (RDF, BORO methodology), IES ensures that data is not only well-defined but also context-aware and machine-readable.
+
+# Why IES matters?
+
+**Standardising data exchange for cross-domain interoperability**
+
+Data fragmentation and inconsistency pose significant challenges to collaboration, analysis, and automation. IES addresses this by:
+
+- Supporting governance and compliance through structured, extensible models
+- Providing a shared vocabulary that different systems can interpret
+- Facilitating seamless data integration across industries and platforms
+- Reducing complexity in information sharing, making processes more efficient and scalable
+
+# Who uses IES?
+
+The IES framework is highly adaptable and is already being adopted across various domains, including:
+
+**Currently, parts of the built environment (including buildings, infrastructure, and utilities), defence, and national security**
+
+- Government & Policy Making – facilitating cross-agency data collaboration
+- National Security & Defence – enabling structured intelligence-sharing and situational awareness
+- Buildings and infrastructure – enhancing Digital Twins and asset management, and ensuring interoperability across sectors
+- Service provision – standardising data for service provision – for example in transport services provision and energy flexibility markets
+
+# How can I get involved?
+
+IES is an evolving and collaborative initiative, welcoming contributions from professionals across diverse sectors. You can:
+
+1. Explore our repositories to gain insight into how IES works in practice
+2. Join a domain working group to help shape the standard for your industry
+3. Collaborate with organisations to drive adoption and integration across sectors
+4. Contribute to the model by proposing improvements, extensions, and refinements
+
+# Introduction to IES
 
 If you are new to IES, see the [Introduction to IES][intro] document.
 
 [mit-license]: https://opensource.org/licenses/MIT
 
-## Introduction to 4D Ontologies
+# Introduction to 4D Ontologies
 
 For an introduction to 4D Ontologies, see the [Introduction to 4D Ontology][4d-ontology-intro] document.
 
-## Documentation
+# Documentation
 
 The complete reference for IES 4.3 is available [here][ies.md].
 
-The IES 4.3 technical specification is available in the [IES Specification][specification].
+The IES 4.3 technical specification is available in the IES [Specification][specification].
 
-Further supporting documentation is available in [Supporting Documentation][supporting-docs].
+Further supporting documentation is available in [Supporting-Documents][supporting-docs].
 
-Sample data are avaialble in the [sample-data][sample-data] directory.
+Sample data are avaialble in the [Sample-Data][sample-data] directory.
 
 [4d-ontology-intro]: ./v4.3/docs/4dOntologyIntro.md
 [ies.md]: ./v4.3/docs/ies.md
 [intro]: ./v4.3/docs/introduction.md
-[sample-data]: ./v4.3/data
+[sample-data]: ./v4.3/Sample-Data
 [specification]: ./v4.3/Specification
 [supporting-docs]: ./v4.3/Supporting-Documents
 
-## License
+# License
 
-© Crown copyright (2020-2025). The Information Exchange Standard (IES 4) is licensed under the terms of the [MIT License][mit-license]. Code and data samples are provided under [Open Government Licence](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) except where otherwise stated.
+© Crown copyright (2020-2025)
+
+The Information Exchange Standard (IES 4) is licensed under the terms of the [MIT License][mit-license]. Code and data samples are provided under [Open Government Licence](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/) except where otherwise stated.
