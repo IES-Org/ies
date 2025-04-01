@@ -5,7 +5,6 @@ This product includes code originally developed as IES4 by Dstl and Telicent Ltd
 
 This product is now maintained and further developed as [IES](https://github.com/IES-Org/ies) by the National Digital Twin Programme.
 
-© 2018-2024 Telicent Ltd.  
 © Crown Copyright 2025. This work has been developed by the National Digital Twin Programme and is legally attributed to the Department for Business and Trade (UK) as the governing entity.  
 
 

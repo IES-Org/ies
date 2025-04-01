@@ -61,18 +61,24 @@ Further supporting documentation is available in [Supporting-Documents][supporti
 
 Sample data are available in the [Sample-Data][sample-data] directory.
 
-# License
 
-© Crown copyright (2020-2025)
+## About this repository
+ 
+This repository is part of the Information Exchange Standard), a UK Government initiative to support consistent and open data exchange. While the Information Exchange Standard is not a legal entity, it represents a collaborative effort across multiple UK government bodies, including (but not limited to) the Department for Business and Trade (DBT), Defence Science and Technology Laboratory (dstl), Ministry of Defence (MOD), Metropolitan Police, Foreign, Commonwealth & Development Office (FCDO), Home Office (HO), and HM Revenue & Customs (HMRC).
+ 
+The Department for Business and Trade is the current custodian of this GitHub repository and the Information Exchange Standard GitHub organisation. However, the work itself reflects the collective contributions of multiple government bodies, with technical support from private sector organisations and subject matter specialists. These contributors are formally recognised in the ‘ACKNOWLEDGEMENTS.md’ file.
+ 
+The GitHub Enterprise environment hosting this repository includes individuals and representatives from across these organisations, supporting a shared development approach.
+ 
+**Licensing**
 
-The Information Exchange Standard (IES 4) is licensed under the terms of the [MIT License][mit-license].
+All **code** in this repository is released under the [MIT License]. (./LICENSE.md).
 
-This repository contains **both source code and documentation**, each covered by different licenses:
-
-- **Code** is licensed under the [Apache License 2.0](LICENSE.md).
-- **Documentation** is licensed under the [Open Government Licence (OGL) v3.0](OGL_LICENSE.md).
-
+All **documentation** in this repository is released under the [Open Government Licence v3.0] https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/
+ 
 By contributing to this repository, you agree that your contributions will be licensed under these terms.
+
+© Crown copyright 2025
 
 [4d-ontology-intro]: ./v4.3/docs/4dOntologyIntro.md
 [ies.md]: ./v4.3/docs/ies.md

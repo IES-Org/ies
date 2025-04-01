@@ -13,7 +13,8 @@ Over time, the following organisations have provided technical expertise, develo
 that have contributed to the evolution of this project:  
 
 - Telicent Ltd
-- Aurora Consulting Ltd
+- Belay Ltd
+- Semantic Partners Ltd
 
 We are grateful for the collaboration that has helped shape this repository.  
 
