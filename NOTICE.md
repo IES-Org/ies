@@ -1,20 +1,23 @@
 # NOTICE  
-# IES
+**Repository:** `[repository-name]`  
+**Description:** `Attribution and legal notices related to the use of this repository, including acknowledgments of external contributions.`  
+<!-- SPDX-License-Identifier: OGL-UK-3.0 -->  
 
-This product includes code originally developed as IES4 by Dstl and Telicent Ltd.
+This repository contains software and documentation developed as part of the  
+Information Exchange Standard (IES), a UK Government initiative.  
 
-This product is now maintained and further developed as [IES](https://github.com/IES-Org/ies) by the National Digital Twin Programme.
+© Crown Copyright 2025. This work forms part of the Information Exchange Standard initiative and is currently under the custodianship of the  
+Department for Business and Trade (UK), acting on behalf of a cross-government group of stakeholders.  
 
-© Crown Copyright 2025. This work has been developed by the National Digital Twin Programme and is legally attributed to the Department for Business and Trade (UK) as the governing entity.  
+## License  
 
+This repository contains **both source code and documentation**, each covered by different licences:  
+- **Code**: Licensed under the **[MIT License](LICENSE.md)**  
+- **Documentation**: Licensed under the **[Open Government Licence v3.0 (OGL-UK-3.0)](OGL_LICENSE.md)**  
 
-This repository contains both source code and documentation, which are covered by different licenses:
-
-Code: Originally developed by Telicent Ltd, now maintained by National Digital Twin Programme. Licensed under the Apache License 2.0.
-Documentation: Licensed under the Open Government Licence v3.0.
-See LICENSE.md and OGL_LICENCE.md for details.
+See `LICENSE.md` and `OGL_LICENSE.md` for full terms.  
 
 This project incorporates contributions from various organisations and individuals.  
 For a list of acknowledgments, see [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md).  
 
-For full licensing terms, see [LICENSE.md](LICENSE.md).
+For full licensing terms, see `LICENSE.md` and `OGL_LICENSE.md`.

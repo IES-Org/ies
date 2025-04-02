@@ -1,84 +1,82 @@
 # Contribution Guidelines  
 
-**Repository:** `IES-Org/ies`  
-**Description:** `Guidelines for issue reporting, documentation suggestions, and NDTP’s controlled contribution model.`  
-**SPDX-License-Identifier:** OGL-UK-3.0
+**Repository:** `Information Exchange Standard (IES)`  
+**Description:** `Guidelines for issue reporting, documentation suggestions, and the IES controlled contribution model.`  
+<!-- SPDX-License-Identifier: OGL-UK-3.0 -->  
 
 Thank you for your interest in this repository.  
+The Information Exchange Standard (IES) is developed and maintained as a cross-government initiative with contributions from various UK government organisations and technical support from approved suppliers and subject matter specialists.
 
-The National Digital Twin Programme (NDTP) develops and maintains this repository in collaboration with suppliers and partner organisations, including other parts of
- government and their suppliers.  
+The Department for Business and Trade (DBT) is the current custodian of this repository and the GitHub organisation, acting on behalf of a broader group of stakeholders.  
 
-NDTP follows an **open-source governance model** where all code is **publicly available** under open-source licences, and collaboration is invited from **approved 
-partners**. Contributions from the general public are not currently accepted, but **feedback, issue reporting, and documentation suggestions are encouraged**.  
+IES follows an **open-source governance model**, where all code is **publicly available** under open-source licences, and collaboration is invited from **approved contributors**. While direct code contributions from the general public are not currently accepted, we **welcome feedback, issue reporting, and documentation suggestions**.  
 
-If you want to see which suppliers and organisations have contributed to this repository in the past, refer to [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md) and the GitHub
- contributor insights page at [Contributors](https://github.com/National-Digital-Twin/your-repo/graphs/contributors).  
+To see a list of contributing organisations and individuals, refer to [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md) and the GitHub contributor insights page at [Contributors](https://github.com/IES-Org/ies/graphs/contributors).  
 
----
+---  
 
 ## How You Can Contribute  
 
-Public users and NDTP partners are encouraged to engage in the following ways:  
-
+Public users and contributors are encouraged to engage in the following ways:  
 - **Reporting bugs and issues** – If you find a problem, please open a GitHub issue.  
-- **Suggesting documentation improvements** – Propose clarifications or additions to the existing documentation.  
-- **Providing structured feedback** – If you have suggestions for improvements, let us know via GitHub Issues.  
+- **Suggesting documentation improvements** – Propose clarifications or additions to existing documentation.  
+- **Providing structured feedback** – Use GitHub Issues to share ideas and enhancement suggestions.  
 
-While we review all input, NDTP prioritises development based on programme goals, supplier development cycles, and strategic objectives.  
+All input is welcome and will be reviewed by maintainers, but prioritisation is subject to IES goals and delivery timelines.
 
-NDTP does not currently accept **public pull requests (PRs) or direct code contributions** to this repository. Contributions are limited to **approved suppliers and 
-partner organisations** under formal agreements.  
+At this time, IES does not accept **public pull requests (PRs)** or **direct code contributions**. Contributions are limited to **approved government contributors and suppliers** working under formal arrangements.  
+For contact details, refer to [MAINTAINERS.md](MAINTAINERS.md).  
 
-For details on repository maintainers and how to contact them, refer to [MAINTAINERS.md](MAINTAINERS.md).  
-
----
+---  
 
 ## Reporting Issues  
-
 If you encounter a bug, error, or inconsistency, please follow these steps:  
-
 1. Check for an existing issue under [Issues](https://github.com/IES-Org/ies/issues).  
-2. Open a new issue if no one has reported it yet. Use one of the provided issue templates.  
-3. Provide a clear, detailed description of the issue, including steps to reproduce it if applicable.  
-4. Label the issue appropriately (bug, documentation, enhancement, etc.).  
+2. Open a new issue if none exists. Use one of the available templates.  
+3. Provide a clear and detailed description, including steps to reproduce if applicable.  
+4. Use labels (bug, documentation, enhancement, etc.) where appropriate.  
 
-For security-related issues, do not submit a public issue. Instead, follow our [Responsible Disclosure process](SECURITY.md).  
+For security-related concerns, do not submit a public issue. Follow our [Responsible Disclosure process](SECURITY.md).  
 
----
+---  
 
 ## Documentation Feedback  
 
-If you find an error in the documentation, need more clarity, or have suggestions for additional documentation, you can:  
+If you find an error, need clarification, or have suggestions for improving documentation:  
 
-1. Open a GitHub issue under the `documentation` label.  
-2. Describe the improvement you are suggesting, including references to existing documentation where applicable.  
-3. Submit structured feedback – specific examples help us make updates faster.  
+1. Open a GitHub issue using the `documentation` label.  
+2. Describe the suggestion clearly, referencing specific content where possible.  
+3. Structured, specific feedback helps us respond more effectively.  
 
-We prioritise documentation updates based on user impact and alignment with programme goals.  
+Documentation updates are prioritised based on user impact and strategic relevance.  
 
----
+---  
 
-## NDTP's Approach to Open-Source Development  
+## IES Approach to Open-Source Development  
+- **All code is published under open-source licences.**  
+- **Development is led by contributors from government and approved suppliers.**  
+- **Feedback is welcome and helps shape ongoing development.**  
 
-- **All NDTP code is publicly available under open-source licences.**  
-- **Development is led by approved suppliers and partners** who have been engaged through a formal process.  
-- **We welcome feedback and ideas**, but implementation is subject to programme priorities.  
+To see what we’re working on, check the [Project Roadmap](https://github.com/information-exchange-standard/your-repo/projects). If no roadmap is currently visible, it may be under development.  
 
----
+---  
 
 ## Branching Strategy  
 
-This repository follows a **GitFlow-based branching model** to manage development efficiently. Key conventions include:  
+This repository follows a **GitFlow-based branching model**:  
+- **Main Branch (`main`)**: Stable, production-ready code.  
+- **Develop Branch (`develop`)**: Integration of features and fixes before release.  
+- **Feature Branches (`feature/*`)**: New functionality, e.g., `feature/new-auth-method`.  
+- **Bugfix Branches (`bugfix/*`)**: Minor issue resolutions.  
+- **Release Branches (`release/*`)**: Final testing and packaging for a stable release.  
+- **Hotfix Branches (`hotfix/*`)**: Critical fixes for `main`, also merged into `develop`.  
 
-For more details, refer to [GitFlow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).  
+More: [GitFlow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)  
 
----
+---  
 
 ## Pull Request Policy  
-
-To maintain high-quality contributions, NDTP enforces the following **minimum pull request (PR) requirements** for approved contributors:  
-
+To maintain high-quality contributions, IES enforces the following **minimum pull request (PR) requirements** for approved contributors:  
 - **All PRs must be reviewed by at least one maintainer** before merging.  
 - **PRs should reference a corresponding issue** where applicable.  
 - **Code changes must include relevant tests** to ensure stability.  
@@ -88,34 +86,30 @@ To maintain high-quality contributions, NDTP enforces the following **minimum pu
 - **Feature and bugfix branches should be deleted after merge** to keep the repository tidy.  
 - **Force pushing to the `main` branch is strictly prohibited** to protect repository integrity.  
 - **CI builds must pass before merging** to enforce basic validation checks.  
+For further details, see [CONTRIBUTING.md](CONTRIBUTING.md).  
 
-For further details, see [CONTRIBUTING.md](CONTRIBUTING.md).   
-
----
+---  
 
 ## Contribution Licensing  
 
-By submitting feedback, documentation suggestions, or issue reports, you acknowledge that any resulting changes will be licensed under the same open-source terms 
-as this repository:  
+By submitting feedback, documentation suggestions, or issue reports, you acknowledge that any resulting contributions will be licensed under the same terms as this repository:  
+- Code (if applicable) is licensed under the **MIT License**.  
+- Documentation is licensed under the **Open Government Licence v3.0 (OGL v3.0)**.  
 
-- Code contributions (if ever accepted) will be licensed under Apache 2.0.  
-- Documentation updates will be licensed under OGL v3.0.  
+All contributions are considered Crown copyright.  
 
-For supplier-contracted development, NDTP ensures that all contributions align with Crown Copyright and public sector open-source standards.  
-
----
+---  
 
 ## Repository Maintainers  
 
-For details on who maintains this repository and how to contact them, refer to [MAINTAINERS.md](MAINTAINERS.md).  
+For current maintainers and contact information, refer to [MAINTAINERS.md](MAINTAINERS.md).  
+Maintainers review issues, guide contributions, and ensure alignment with programme objectives.  
 
-NDTP repository maintainers review reported issues, evaluate documentation suggestions, and oversee ongoing development.  
+---  
 
----
+**Maintained as part of the Information Exchange Standard initiative.**  
 
-Maintained by the National Digital Twin Programme (NDTP).  
-
-© Crown Copyright 2025. This work has been developed by the National Digital Twin Programme and is legally attributed to the Department for Business and Trade (UK) 
-as the governing entity.  
+© Crown Copyright 2025. This work is currently under the custodianship of the Department for Business and Trade (UK), acting on behalf of a cross-government group of stakeholders.  
 Licensed under the Open Government Licence v3.0.  
-For full licensing terms, see [OGL_LICENSE.md](OGL_LICENSE.md).
+
+For full licensing terms, see [OGL_LICENSE.md](OGL_LICENSE.md).  
