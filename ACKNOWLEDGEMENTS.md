@@ -19,6 +19,8 @@ We are grateful for the collaboration that has helped shape this repository.
 For a list of individual contributors who have made direct commits to this repository, see  
 GitHub’s auto-generated contributor insights: [Contributors](https://github.com/IES-Org/ies/graphs/contributors).  
 
+This work builds upon an IES repository originally released by DSTL. For access to the original contributors and development history, please see the public archive available at https://github.com/dstl/IES4/graphs/contributors.
+
 ---  
 
 **Note:** This acknowledgment does not confer any legal rights, ownership, or imply ongoing involvement by any of the named organisations or individuals.  

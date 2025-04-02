@@ -63,32 +63,9 @@ To see what we’re working on, check the [Project Roadmap](https://github.com/i
 
 ## Branching Strategy  
 
-This repository follows a **GitFlow-based branching model**:  
-- **Main Branch (`main`)**: Stable, production-ready code.  
-- **Develop Branch (`develop`)**: Integration of features and fixes before release.  
-- **Feature Branches (`feature/*`)**: New functionality, e.g., `feature/new-auth-method`.  
-- **Bugfix Branches (`bugfix/*`)**: Minor issue resolutions.  
-- **Release Branches (`release/*`)**: Final testing and packaging for a stable release.  
-- **Hotfix Branches (`hotfix/*`)**: Critical fixes for `main`, also merged into `develop`.  
+This repository contains released versions of IES only and development is managed in the IES development repository. Therefore, only the `main` branch is maintained in this repository and tags used to denote IES versions using the semantic versioning format `MAJOR.MINOR.PATCH`.
 
-More: [GitFlow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)  
-
----  
-
-## Pull Request Policy  
-To maintain high-quality contributions, IES enforces the following **minimum pull request (PR) requirements** for approved contributors:  
-- **All PRs must be reviewed by at least one maintainer** before merging.  
-- **PRs should reference a corresponding issue** where applicable.  
-- **Code changes must include relevant tests** to ensure stability.  
-- **Commit messages should follow best practices**, including referencing issue numbers when relevant.  
-- **Documentation updates should accompany PRs that impact functionality.**  
-- **PRs should use "squash and merge" as the preferred merge strategy**, ensuring a clean history.  
-- **Feature and bugfix branches should be deleted after merge** to keep the repository tidy.  
-- **Force pushing to the `main` branch is strictly prohibited** to protect repository integrity.  
-- **CI builds must pass before merging** to enforce basic validation checks.  
-For further details, see [CONTRIBUTING.md](CONTRIBUTING.md).  
-
----  
+---
 
 ## Contribution Licensing  
 
