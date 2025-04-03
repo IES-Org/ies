@@ -1,42 +1,85 @@
-# Information Exchange Standard (IES) Ontologies
+# Information Exchange Standard (IES)  
+**Repository:** `Information Exchange Standard (IES)`  
+**Description:** `The home of the UK Government’s Information Exchange Standard, enabling consistent and open data exchange across domains.`  
+<!--  
+SPDX-License-Identifier: See individual files for license.  
+- Source code: MIT  
+- Documentation: OGL-UK-3.0  
+-->  
 
-This repository hosts the documentation and specifications for the Information Exchange Standard (IES) ontologies. These RDF ontologies provide standardized vocabularies and semantics for information exchange. The documentation is served via GitHub Pages at [add-your-github-pages-url-here].
+## Overview  
 
-## Ontology Structure
+The **Information Exchange Standard (IES)** is a UK Government initiative to support consistent, open, and interoperable data exchange. It provides a shared semantic foundation that enables public sector organisations to collaborate and integrate systems more effectively.  
 
-The IES is composed of several interconnected ontologies:
+The standard is designed to be modular and extensible, with support for evolving domain-specific extensions led by diverse teams across government.  
 
-- `/iescommon` - Core concepts and shared vocabulary
-- `/iesbuild` - Concepts and relations about the built environment
-- `/iesinfra` - Infrastructure in the built environment
-- `/iesnsd` - security and defense concepts
-- `/iespeople` - People, organizations, and roles
-- `/iessystems` - Systems and components descriptions
+This repository is the official home of IES and includes documentation, example data, and ontology models to support adoption and use.  
 
-Each ontology maintains versioned documentation under `v1.0`, `v1rc`, etc.
+---  
 
-## Updating and Publishing
+## Governance and Custodianship  
 
-For details on updating and publishing the IES ontologies, see [scripts/README.md](scripts/README.md).
-## Documentation Access
+While the Information Exchange Standard is not a legal entity, it represents a collaborative effort across multiple UK government bodies, including (but not limited to):
 
-The ontology documentation is hosted using GitHub Pages. Each ontology section includes:
+- Department for Business and Trade (DBT) *(custodian of this repository)*  
+- Defence Science and Technology Laboratory (Dstl)  
+- Ministry of Defence (MOD)  
+- Metropolitan Police  
+- Foreign, Commonwealth & Development Office (FCDO)  
+- Home Office (HO)  
+- HM Revenue & Customs (HMRC)  
 
-- Concept definitions
-- Property descriptions
-- Usage examples
-- Version history
+These organisations act as the custodians and decision-makers for the ongoing development of the Standard.  
 
-## Versioning
+The development of this work is supported by private sector suppliers and technical specialists engaged through formal agreements. Their contributions are formally recognised in the [`ACKNOWLEDGEMENTS.md`](./ACKNOWLEDGEMENTS.md) file.  
 
-Each ontology follows semantic versioning:
-- `v1.0.0`, `v2.0.0`, etc. - Stable releases
-- `v1.0.0rc`, `v2.0.0rc`, etc. - Release candidates
+---  
 
-## License
+## Repository Contents  
 
-This project is licensed under the terms specified in the [LICENSE](LICENSE) file.
+This repository includes:  
 
----
+- [`4dOntologyIntro.md`](./v4.3/docs/4dOntologyIntro.md) – Introduction to the 4D Ontology  
+- [`ies.md`](./v4.3/docs/ies.md) – Background and purpose of the Information Exchange Standard  
+- [`Sample-Data/`](./Sample-Data) – Sample datasets for validation, testing, and demonstration purposes
+- [`Specification`](./v4.3/Specification) - The ontology specification documents for the Information Exchange Standard
+- [`Supporting-Documentation/`](./v4.3/Supporting-Documentation) – Additional guidance and reference materials
 
-**Note**: This README will be expanded with detailed information about each ontology, their relationships, usage guidelines, and best practices for implementation.
+Further information is available on the [IES website](https://www.informationexchangestandard.org)
+
+---  
+
+## Project History  
+
+This repository replaces the earlier [`IES4`](https://github.com/dstl/IES4) repository, originally hosted by the Defence Science and Technology Laboratory (Dstl), which was archived on 4 March 2025.  
+
+Following that archive, the work was migrated here, adapted, and extended to support ongoing collaboration, development, and publication of new domain-specific extensions. This repository is now the authoritative and actively maintained home of the Information Exchange Standard.  
+
+---  
+
+## Licensing  
+
+This repository contains both source code and documentation, each released under separate terms:  
+
+- **Code** – Licensed under the [MIT License](./LICENSE.md)  
+- **Documentation** – Licensed under the [Open Government Licence v3.0 (OGL-UK-3.0)](./OGL_LICENSE.md)  
+
+By contributing to this repository, you agree that your contributions will be licensed under these terms.  
+
+© Crown copyright (2020–2025)  
+
+---  
+
+## Contributions and Feedback  
+
+We welcome:  
+- Feedback and structured suggestions  
+- Bug reports and clarifications  
+- Requests for extensions or additional documentation  
+
+Please see:  
+- [CONTRIBUTING.md](./CONTRIBUTING.md) for contribution guidelines  
+- [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) for expected behaviour and reporting concerns  
+- [MAINTAINERS.md](./MAINTAINERS.md) for maintainer contact information  
+
+---  
