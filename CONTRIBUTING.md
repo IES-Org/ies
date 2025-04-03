@@ -57,8 +57,6 @@ Documentation updates are prioritised based on user impact and strategic relevan
 - **Development is led by contributors from government and approved suppliers.**  
 - **Feedback is welcome and helps shape ongoing development.**  
 
-To see what we’re working on, check the [Project Roadmap](https://github.com/information-exchange-standard/your-repo/projects). If no roadmap is currently visible, it may be under development.  
-
 ---  
 
 ## Branching Strategy  

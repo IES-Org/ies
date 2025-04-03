@@ -24,11 +24,11 @@ The Information Exchange Standard does not accept public code contributions, but
 
 ## Current Maintainers 
  
-| Name      | Organisation           | Role | Contact                        |
-|-----------|------------------------|------|--------------------------------|
+| Name      | Organisation           | Role | Contact                       |
+|-----------|------------------------|------|-------------------------------|
 | Dave Dyke | Agilit Ltd             | Lead Maintainer | https://github.com/aigora-de |
 |  Dave Dyke | Agilit Ltd             | Security Contact | https://github.com/aigora-de |
-|  Dave Dyke | Agilit Ltd] | Documentation Lead | https://github.com/aigora-de] |
+|  Dave Dyke | Agilit Ltd] | Documentation Lead | https://github.com/aigora-de |
 
 For general issues, please **open a GitHub issue** rather than contacting maintainers directly.  
 
